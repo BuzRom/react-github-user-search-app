@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ *:active,
+ *:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: $body-bg-color;
+    font-family: $font-family;
+}
+
+.container {
+    margin: 0 auto;
+    padding-bottom: 20px;
+    width: $container-width;
+
+    @include lg {
+        width: 60%;
+    }
+}
+
+.input {
+    background-color: $input-bg-color;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    min-width: 300px;
+    padding: 10px 20px;
+    width: 80%;
+}
+
+.list {
+    margin-top: 50px;
+
+    .item {
+        background-color: $item-bg-color;
+        border-radius: 10px;
+        height: 70px;
+        overflow: hidden;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            background-color: $item-bg-hvr-color;
+            transform: scale(1.01);
+        }
+
+        &__link {
+            align-items: center;
+            color: $text-color;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}

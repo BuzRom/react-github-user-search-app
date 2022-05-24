@@ -1,0 +1,11 @@
+.header {
+    align-items: center;
+    background-color: $header-bg-color;
+    color: $header-title-color;
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+}

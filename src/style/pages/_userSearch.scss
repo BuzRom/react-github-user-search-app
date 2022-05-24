@@ -1,0 +1,56 @@
+.users {
+    text-align: center;
+    padding: 120px 0 0;
+
+    .list {
+        .item {
+            height: 120px;
+            margin: 0 15px 15px 15px;
+            padding: 10px;
+
+            &__link {
+                align-items: center;
+                display: flex;
+                color: $item-text-color;
+                justify-content: space-between;
+
+                & img {
+                    width: 100px;
+                }
+            }
+
+            &__info {
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 0 clamp(10px, 5vw, 50px);
+                width: 85%;
+            
+                @include sm {
+                    flex-direction: row;
+                }
+            }
+
+            &__title {
+                font-size: 1.6rem;
+                margin: 0 0 10px 0;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            
+                @include sm {
+                    font-size: 2rem;
+                    margin: 0;
+                }
+            }
+        
+            &__repos {
+                font-size: 1.2rem;
+            
+                @include sm {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}

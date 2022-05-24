@@ -1,0 +1,80 @@
+.profile {
+    padding: 120px 0 0;
+
+    .content {
+        &__main {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            margin: 0 0 50px 0;
+
+            @include md {
+                flex-direction: row;
+            }
+    
+            & img {
+                margin: 0 0 30px 0;
+                width: 300px;
+
+                @include md {
+                    margin: 0;
+                }
+            }
+    
+            .info {
+                @include md {
+                    margin: 0 0 0 50px;
+                }
+    
+                &__name {
+                    font-size: 3rem;
+                }
+                
+                .list {
+                    &__item {
+                        font-size: 1.2rem;
+                        margin: 10px 0 0 0;
+                    }
+                }
+            }
+        }
+
+        &__biography {
+            margin: 50px 20px;
+        }
+    }
+
+    &__repo {
+        text-align: center;
+
+        .list {
+            .item {
+                align-items: center;
+                display: flex;
+                height: auto;
+                margin: 15px 0 0 0;
+                padding: 10px 20px;
+
+                &__link {
+                    width: 100%;
+                }
+
+                &__title {
+                    font-size: 1.4rem;
+                    margin-right: auto;
+                    overflow: hidden;
+                    padding: 0 10px 0 0;
+                    text-align: left;
+                    text-overflow: ellipsis;
+                    width: 80%;
+                }
+
+                &__info {
+                    font-size: 1.2rem;
+                    margin-left: auto;
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+}
